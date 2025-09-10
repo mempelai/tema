@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan NK-F</title>
+
+  <!-- OG Preview: Copy dari postingan asli -->
+  <meta property="og:title" content="Tema Nikah-Kriste-Foto">
+  <meta property="og:description" content="Dengan penuh sukacita, kami mengundang Anda untuk hadir dalam acara pernikahan kami.">
+  <meta property="og:image" content="https://live.staticflickr.com/65535/54766489805_1baf46bd6f_c.jpg">
+  <meta property="og:url" content="https://idam.lovestoblog.com/nk-001-f/">
+  <meta property="og:type" content="website">
+
+  <!-- Redirect otomatis ke website asli -->
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nomor = params.get("no") || "001";   
+    const nama = params.get("nama") || "";     
+
+    const folderName = window.location.pathname.split("/").slice(-2, -1)[0]; // NK-F
+    const prefix = folderName.split("-")[0]; 
+    const suffix = folderName.split("-")[1]; 
+
+    const target = `https://idam.lovestoblog.com/${prefix}-${nomor}-${suffix}/?nama=${encodeURIComponent(nama)}`;
+    window.location.href = target;
+  </script>
+</head>
+<body>
+  <p>Jika tidak diarahkan otomatis, <a id="link" href="#">klik di sini</a>.</p>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nomor = params.get("no") || "001";
+    const nama = params.get("nama") || "";
+    const folderName = window.location.pathname.split("/").slice(-2, -1)[0];
+    const prefix = folderName.split("-")[0];
+    const suffix = folderName.split("-")[1];
+    document.getElementById("link").href = `https://idam.lovestoblog.com/${prefix}-${nomor}-${suffix}/?nama=${encodeURIComponent(nama)}`;
+  </script>
+</body>
+</html>
