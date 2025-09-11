@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedang Dialihkan...</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+      text-align: center;
+    }
+    .box {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #e63946;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .loading {
+      border: 4px solid #eee;
+      border-top: 4px solid #e63946;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      margin: 0 auto;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <script>
+    // Redirect otomatis setelah 2 detik
+    setTimeout(() => {
+      window.location.href = "https://idam.lovestoblog.com/";
+    }, 2000);
+  </script>
+</head>
+<body>
+  <div class="box">
+    <h1>Halaman Tidak Ditemukan</h1>
+    <p>Sedang mengalihkan ke situs utama...</p>
+    <div class="loading"></div>
+  </div>
+</body>
+</html>
